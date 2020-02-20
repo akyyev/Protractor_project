@@ -62,11 +62,13 @@ Documentation: https://www.protractortest.org/#/api
         browser.waitForAngularEnabled(false)
 
 ---------------HTML Report------------------------
+
     To generate HTML reports:
         1. Install protractor beautiful reporter
             For_mac: sudo npm install protractor-beautiful-reporter --save-dev
         2. add this code snippet to onPrepare on Config
-            --------------------
+
+    
             ```
             let HTMLReporter = require("protractor-beautiful-reporter");
             jasmine.getEnv().addReporter( 
@@ -78,8 +80,10 @@ Documentation: https://www.protractortest.org/#/api
                 ).getJasmine2Reporter()
             );
             ```
-            ----------------------
+
+
 ------------------Pop ups-----------------------------
+
     To handle pop-ups:
         var alter = browser.switchTo().alert();
         alert.dismiss();
@@ -88,11 +92,13 @@ Documentation: https://www.protractortest.org/#/api
         alert.getText();
 
 ------------------Multi-windows------------------------
+
         browser.getWindowHandles();
         browser.switchTo().window();
         browser.switchTo().defaultContent();
 
 ------------------Frames ------------------------------
+
         browser.switchTo().frame();
         browser.switchToParentFrame();
 
