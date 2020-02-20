@@ -47,59 +47,59 @@ Documentation: https://www.protractortest.org/#/api
         afterEach(function(){codes}): runs after each test case (@AfterMethod)
 ---------------------------------------
 
-Shorcuts: 
-    desc -> to create test group
-    it -> to create test case
+    Shorcuts: 
+        desc -> to create test group
+        it -> to create test case
 
 ----------------Browser-----------------------
 
-browser: global object (same with webdriver)
-    browser.get(URL);
-    browser.sleep();
-    //since Jasmine is desined for testing Angular applications 
-    //so when testing applications created without Angular will make your test fail.
-    //to fix "Error while running testForAngular: script timeout"
-    browser.waitForAngularEnabled(false)
+    browser: global object (same with webdriver)
+        browser.get(URL);
+        browser.sleep();
+        //since Jasmine is desined for testing Angular applications 
+        //so when testing applications created without Angular will make your test fail.
+        //to fix "Error while running testForAngular: script timeout"
+        browser.waitForAngularEnabled(false)
 
 ---------------HTML Report------------------------
-To generate HTML reports:
-    1. Install protractor beautiful reporter
-        For_mac: sudo npm install protractor-beautiful-reporter --save-dev
-    2. add this code snippet to onPrepare on Config
-        --------------------
-        ```
-        let HTMLReporter = require("protractor-beautiful-reporter");
-        jasmine.getEnv().addReporter( 
-            new HTMLReporter(  
-                {
-                    baseDirectory: "Reports/Amazon_Reports",
-                    takeScreenShotsOnlyForFailedSpecs: true
-                }
-             ).getJasmine2Reporter()
-         );
-         ```
-        ----------------------
+    To generate HTML reports:
+        1. Install protractor beautiful reporter
+            For_mac: sudo npm install protractor-beautiful-reporter --save-dev
+        2. add this code snippet to onPrepare on Config
+            --------------------
+            ```
+            let HTMLReporter = require("protractor-beautiful-reporter");
+            jasmine.getEnv().addReporter( 
+                new HTMLReporter(  
+                    {
+                        baseDirectory: "Reports/Amazon_Reports",
+                        takeScreenShotsOnlyForFailedSpecs: true
+                    }
+                ).getJasmine2Reporter()
+            );
+            ```
+            ----------------------
 ------------------Pop ups-----------------------------
-To handle pop-ups:
-    var alter = browser.switchTo().alert();
-    alert.dismiss();
-        or
-    alert.accept();
-    alert.getText();
+    To handle pop-ups:
+        var alter = browser.switchTo().alert();
+        alert.dismiss();
+            or
+        alert.accept();
+        alert.getText();
 
 ------------------Multi-windows------------------------
-    browser.getWindowHandles();
-    browser.switchTo().window();
-    browser.switchTo().defaultContent();
+        browser.getWindowHandles();
+        browser.switchTo().window();
+        browser.switchTo().defaultContent();
 
 ------------------Frames ------------------------------
-    browser.switchTo().frame();
-    browser.switchToParentFrame();
+        browser.switchTo().frame();
+        browser.switchToParentFrame();
 
 ------------------Explicit wait------------------------
 
-    var explicitWait = protractor.ExpectedConditions;
-        browser.wait(explicitWait.Condition, 10);
+        var explicitWait = protractor.ExpectedConditions;
+            browser.wait(explicitWait.Condition, 10);
 
 
 
