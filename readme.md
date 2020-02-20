@@ -69,7 +69,7 @@ Documentation: https://www.protractortest.org/#/api
         2. add this code snippet to onPrepare on Config
 
     
-            ```
+            ```Javascript
             let HTMLReporter = require("protractor-beautiful-reporter");
             jasmine.getEnv().addReporter( 
                 new HTMLReporter(  
