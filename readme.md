@@ -68,8 +68,7 @@ Documentation: https://www.protractortest.org/#/api
             For_mac: sudo npm install protractor-beautiful-reporter --save-dev
         2. add this code snippet to onPrepare on Config
 
-    
-            ```Javascript
+
             let HTMLReporter = require("protractor-beautiful-reporter");
             jasmine.getEnv().addReporter( 
                 new HTMLReporter(  
@@ -79,7 +78,6 @@ Documentation: https://www.protractortest.org/#/api
                     }
                 ).getJasmine2Reporter()
             );
-            ```
 
 
 ------------------Pop ups-----------------------------
