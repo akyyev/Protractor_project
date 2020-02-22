@@ -1,4 +1,4 @@
-var googleJson = require('../Resources/GoogleJson.json');
+var googleJson = require('../../Resources/GoogleJson.json');
 
 describe('Test group 2', () => {
     

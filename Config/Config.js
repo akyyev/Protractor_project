@@ -19,7 +19,7 @@ exports.config = {
     //     reg: '../Specs/Spec3.js' //for google
     // },
 
-    specs: ['../Specs/Spec1.js', '../Specs/Spec2.js', '../Specs/Spec3.js'],
+    specs: ['../Specs/Google/Spec1.js', '../Specs/Google/Spec2.js', '../Specs/Google/Spec3.js'],
     onPrepare: function(){ //runs before each test cases
         //disabling for angular is good to put here
         browser.waitForAngularEnabled(false);
@@ -33,7 +33,7 @@ exports.config = {
         jasmine.getEnv().addReporter( 
             new HTMLReporter(  
                 {
-                    baseDirectory: "Reports",
+                    baseDirectory: "Reports/Google_Reports",
                     takeScreenShotsOnlyForFailedSpecs: true
                 }
              ).getJasmine2Reporter()

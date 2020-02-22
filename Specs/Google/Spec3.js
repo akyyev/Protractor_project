@@ -1,6 +1,6 @@
 var actions = browser.actions();
-var googlePage = require('../Pages/GooglePage.js');
-var testData = require('../Resources/TestData1.json');
+var googlePage = require('../../Pages/GooglePage.js');
+var testData = require('../../Resources/TestData1.json');
 
 describe('Test group 3', () => {
     

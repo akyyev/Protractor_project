@@ -1,6 +1,5 @@
-var VyTrackJson = require("../Resources/VyTrack.json");  // jSon
-var VyTrackLogInPage = require("../Pages/VyTrackLoginPage.js"); // log in paage elemnts
-
+var VyTrackJson = require("../../Resources/VyTrack.json");  // jSon
+var VyTrackLogInPage = require("../../Pages/VyTrackLoginPage.js"); // log in page elements
 
 describe('Test group 6', () => {
     

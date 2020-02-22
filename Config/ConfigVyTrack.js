@@ -4,7 +4,7 @@ exports.config = {
     directConnect: true,
     capabilities:{ browserName: 'chrome'},
 
-    specs: ['../Specs/Spec6.js', '../Specs/Spec7.js'],
+    specs: ['../Specs/VyTrack/Login_spec.js', '../Specs/VyTrack/Spec7.js'],
     onPrepare: function(){ 
         browser.waitForAngularEnabled(false);
         browser.manage().timeouts().implicitlyWait(10000);

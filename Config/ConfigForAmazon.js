@@ -4,7 +4,7 @@ exports.config = {
     directConnect: true,
     capabilities:{ browserName: 'chrome'},
 
-    specs: ['../Specs/Spec4.js', '../Specs/Spec5.js'],
+    specs: ['../Specs/Amazon/Spec4.js'],
     onPrepare: function(){ 
         browser.waitForAngularEnabled(false);
         browser.manage().timeouts().implicitlyWait(10000);
