@@ -38,5 +38,6 @@ exports.config = {
                 }
              ).getJasmine2Reporter()
          );
+         
     }
 }

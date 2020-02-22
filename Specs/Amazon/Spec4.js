@@ -13,5 +13,5 @@ describe('Amazon Test Demo', () => {
         actions.sendKeys(protractor.Key.ENTER).perform();
         browser.sleep(3000);
     });
-
+    
 });

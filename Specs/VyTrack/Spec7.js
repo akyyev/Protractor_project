@@ -22,7 +22,7 @@ describe('Test group 7', () => {
     it('Verify page subtitle is All Cars', () => {
         vehiclePage.subtitle.getText().then(function(subtitle){console.log(subtitle);});
         
-        expect(vehiclePage.subtitle.getText()).toEqual('All Cars');
+        expect(vehiclePage.subtitle.getText()).toEqual('All Cars'); 
     });
 });
 

@@ -15,6 +15,7 @@ describe('Test group 6', () => {
     it('Click login button', () => {
         VyTrackLogInPage.LogInButton.click();
         browser.sleep(3000);
+        
     });
 
 
