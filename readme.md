@@ -1,5 +1,7 @@
-Protractor: It's an end to end test framework for AngularJS applications
-            All test will be executed on 1 open and close of browser.
+Protractor
+-------------------------------
+    It's an end to end test framework for AngularJS applications
+    All test are executed on 'one' start and close of a browser.
 
 Documentation: https://www.protractortest.org/#/api
 
