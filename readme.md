@@ -1,4 +1,4 @@
-![Protractor_jasmine]("https://github.com/akyyev/Protractor_project/blob/master/jasmine_protractor.jpg")
+![Protractor_jasmine](jasmine_protractor.jpg?raw=true "Protractor")
 
 Protractor
 -------------------------------
