@@ -1,3 +1,5 @@
+![Protractor_jasmine]("jasmine_protractor.jpg")
+
 Protractor
 -------------------------------
     It's an end to end test framework for AngularJS applications
@@ -19,7 +21,13 @@ Documentation: https://www.protractortest.org/#/api
 
     Jasmine: It's BDD framework
 
-    
+Prerequisites
+---------------------
+    Protractor is a Node.js program. To run, you will need to have Node.js installed. You will download Protractor package using npm, which comes with Node.js. Check the version of Node.js you have by running node --version. It should be greater than v0.10.0.
+    By default, Protractor uses the Jasmine test framework for its testing interface. This tutorial assumes some familiarity with Jasmine, and we will use version 2.3.
+    This tutorial will set up a test using a local standalone Selenium Server to control browsers. You will need to have theJava Development Kit (JDK) installed to run the standalone Selenium Server. Check this by running java -version from the command line.
+
+
 Getting Started
 ---------------------------------------
 
