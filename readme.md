@@ -61,19 +61,21 @@ Getting Started
         1. First go to Config directory
         2. protractor fileName.js
 
+Annotations
 ---------------------------------------
-    Annotations:
         beforeAll(function(){codes}) : runs before all test cases (similar to @BeforeClass)
         afterAll(function(){codes}): runs after all test cases in the group finished (similar to @AfterClass)
         beforeEach(function(){codes}): runs before each test case (@BeforeMethod)
         afterEach(function(){codes}): runs after each test case (@AfterMethod)
+
+Shorcuts
 ---------------------------------------
 
-    Shorcuts: 
         desc -> to create test group
         it -> to create test case
 
-----------------Browser-----------------------
+Browser
+---------------------------------------
 
     browser: global object (same with webdriver)
         browser.get(URL);
@@ -83,7 +85,8 @@ Getting Started
         //to fix "Error while running testForAngular: script timeout"
         browser.waitForAngularEnabled(false)
 
----------------HTML Report------------------------
+HTML Report
+---------------------------------------
 
     To generate HTML reports:
         1. Install protractor beautiful reporter
@@ -101,8 +104,8 @@ Getting Started
                 ).getJasmine2Reporter()
             );
 
-
-------------------Pop ups-----------------------------
+Pop ups
+-----------------------------------------------
 
     To handle pop-ups:
         var alter = browser.switchTo().alert();
@@ -111,18 +114,21 @@ Getting Started
         alert.accept();
         alert.getText();
 
-------------------Multi-windows------------------------
+Multi-windows
+------------------------------------------
 
         browser.getWindowHandles();
         browser.switchTo().window();
         browser.switchTo().defaultContent();
 
-------------------Frames ------------------------------
+Frames
+------------------------------------------------
 
         browser.switchTo().frame();
         browser.switchToParentFrame();
 
-------------------Explicit wait------------------------
+Explicit wait
+------------------------------------------
 
         var explicitWait = protractor.ExpectedConditions;
             browser.wait(explicitWait.Condition, 10);
