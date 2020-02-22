@@ -18,8 +18,8 @@ Documentation: https://www.protractortest.org/#/api
     Jasmine: It's BDD framework
 
     
-    Getting Started
-
+Getting Started
+---------------------------------------
 
     Install protractor:
         npm install -g protractor
@@ -37,6 +37,7 @@ Documentation: https://www.protractortest.org/#/api
             windows     :npm install protractor-beautiful-reporter --save-dev
             Mac         :sudo npm install protractor-beautiful-reporter --save-dev
 
+---------------------------------------
 
     To import components in Jasmine
         1. Config : Runs the step definitions
