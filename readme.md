@@ -88,6 +88,12 @@ Shorcuts
         desc -> to create test group
         it -> to create test case
 
+To Run Tests
+---------------------------------------
+
+        on the terminal locate config.js
+            : protractor Config/Config.js
+
 Browser
 ---------------------------------------
 
